@@ -5,19 +5,17 @@ export const Footer: React.FC = () => {
     <footer className="bg-blue-950 py-12 text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          
           {/* Columna 1: Logo e Identidad */}
           <div>
             <div className="mb-4 text-2xl font-bold">
-              [Nombre de la Institución / Logo]
+              Colegio de Ciencias y Humanidades
             </div>
-            <p className="text-sm leading-relaxed text-blue-200">
-              [Breve descripción o lema de la escuela. Espacio para un pequeño párrafo que refuerce la identidad.]
-            </p>
+            {/* <p className="text-sm leading-relaxed text-blue-200">
+            </p> */}
           </div>
 
           {/* Columna 2: Enlaces Rápidos */}
-          <div>
+          {/* <div>
             <h3 className="mb-4 text-lg font-semibold">[Enlaces Rápidos]</h3>
             <ul className="space-y-2 text-sm text-blue-200">
               <li>
@@ -41,7 +39,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Columna 3: Información de Contacto */}
           <div>
@@ -49,15 +47,18 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3 text-sm text-blue-200">
               <li className="flex items-start gap-3">
                 <span className="text-xl">📍</span>
-                <span>[Calle, Número, Colonia, C.P., Ciudad, Estado]</span>
+                <a href="">
+                <span>
+                  Coronel Enrique Carrola Antuna s/n. Colonia Hipódromo. C.P. 34270.Durango, Dgo. México.
+                </span></a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-xl">📞</span>
-                <span>[Número de teléfono con lada]</span>
+                <span> (618) 827 13 05.</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-xl">✉️</span>
-                <span>[correo.electronico@escuela.edu.mx]</span>
+                <span> cch@ujed.mx</span>
               </li>
             </ul>
           </div>
@@ -67,22 +68,22 @@ export const Footer: React.FC = () => {
             <h3 className="mb-4 text-lg font-semibold">[Síguenos]</h3>
             <div className="flex gap-4">
               {/* Botones de Redes Sociales (Puedes poner iconos SVG reales dentro de estos div/a) */}
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-900 font-bold transition-colors hover:bg-blue-800"
                 aria-label="Facebook"
               >
                 [FB]
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-900 font-bold transition-colors hover:bg-blue-800"
                 aria-label="Instagram"
               >
                 [IG]
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-900 font-bold transition-colors hover:bg-blue-800"
                 aria-label="Twitter / X"
               >
@@ -90,15 +91,15 @@ export const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-
         </div>
 
         {/* Barra inferior: Derechos de Autor */}
-        <div className="mt-12 border-t border-blue-900 pt-8 text-center text-sm text-blue-300">
+        {/* <div className="mt-12 border-t border-blue-900 pt-8 text-center text-sm text-blue-300">
           <p>
-            © {new Date().getFullYear()} [Nombre de la Institución]. Todos los derechos reservados.
+            © {new Date().getFullYear()} [Nombre de la Institución]. Todos los
+            derechos reservados.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   )
