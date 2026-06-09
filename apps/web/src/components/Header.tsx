@@ -11,6 +11,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@wor
 // import { Menu } from "lucide-react" 
 import { cn } from "@workspace/ui/lib/utils"
 import { Link } from "react-router-dom"
+import { IconMenu2 } from "@tabler/icons-react"
 
 export const Header: React.FC = () => {
   const menuItems = [
@@ -114,7 +115,7 @@ export const Header: React.FC = () => {
           <Sheet>
             <SheetTrigger asChild>
               <button className="p-2 text-blue-950" aria-label="Abrir menú">
-                {/* <Menu className="h-8 w-8" /> */}oki
+                <IconMenu2 className="h-8 w-8" />
               </button>
             </SheetTrigger>
             <SheetContent side="right" className="w-75 bg-white">
